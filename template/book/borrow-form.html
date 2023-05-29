@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <title>Mượn sách</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"><i class="fas fa-book"></i>Library</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="./borrow-form.html" class="fas fa-id-card"></a>
+                <a href="./favorite-book.html" class="fas fa-heart"></a>
+                <div class="dropdown">
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div class="dropdown-menu">
+                        <a href="../user/profile.html">Hồ sơ</a>
+                        <a href="../user/history.html">Lịch sử</a>
+                        <a href="../login.html" id="logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../borrow.html">Sách đang mượn</a>
+                <a href="../category.html">Mượn sách</a>
+                <a id="admin" href="../templatemo_524_product_admin/index.html">Quản lý</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="../index.html" class="fas fa-home"></a>
+        <a href="../borrow.html" class="fas fa-search"></a>
+        <a href="../category.html" class="fas fa-chart-simple"></a>
+        <a href="../templatemo_524_product_admin/index.html" class="fas fa-duotone fa-calendar-days"></a>
+    </nav>
+    <!-- ------- -->
+
+    <!-- content -->
+    <section class="borrow-form">
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="title">
+                    <h3>Thông tin mượn sách</h3>
+                </div>
+                <form action="">
+                    <div class="inputBox">
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="Họ và tên">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-id-card"></span>
+                        <input type="text" placeholder="Mã sinh viên">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-book"></span>
+                        <input type="text" placeholder="Tên sách">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-calendar-alt"> Start</span>
+                        <input type="date" placeholder="Ngày mượn">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-calendar-alt"> End</span>
+                        <input type="date" placeholder="Ngày trả">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-phone"></span>
+                        <input type="text" placeholder="Số điện thoại">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <input type="text" placeholder="Địa chỉ">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-id-card"></span>
+                        <input type="text" placeholder="Mã sách">
+                    </div>
+                    <div class="inputBox">
+                        <span class="fas fa-id-card"></span>
+                        <input type="text" placeholder="Mã sách">
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-submit">Xác nhận</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ------- -->
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <a href="#"><i class="fas fa-map-maker-alt"></i> 1234, Đại Cồ Việt, Hà Nội</a>
+                <a href="tel:0123456789"><i class="fas fa-phone"></i> 0123456789</a>
+                <a href="mailto:Library@gmail.com"><i class="fas fa-envelope"></i>Library@gmail.com </a>
+            </div>        
+
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="../index.html"><i class="fas fa-arrow-right"></i> Trang chủ</a>
+                <a href="../borrow.html"><i class="fas fa-arrow-right"></i> Sách đang mượn</a>
+                <a href="../category.html"><i class="fas fa-arrow-right"></i> Mượn sách</a>
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://github.com/daitran1412/manage_library" class="fab fa-github"></a>
+            </div>
+
+            <div class="credit">create by <span>Tran Dinh Dai</span></div>
+
+        </div>
+
+    </section>
+    <!-- ------- -->
+
+    <!-- loader -->
+    <div class="submit-container action">
+        <img src="../../static/image/Submit.gif" alt="Mượn thành công">
+    </div>
+    <div class="loader-container">
+        <img src="../../static/image/Loader.gif" alt="Vui lòng đợi...">
+    </div>
+    <!-- ------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../../static/js/scripts.js"></script>
+</body>
+</html>

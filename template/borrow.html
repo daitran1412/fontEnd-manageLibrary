@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Sách đang mượn</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"><i class="fas fa-book"></i>Library</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="./book/borrow-form.html" class="fas fa-id-card"></a>
+                <a href="./book/favorite-book.html" class="fas fa-heart"></a>
+                <div class="dropdown">
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div class="dropdown-menu">
+                        <a href="./user/profile.html">Hồ sơ</a>
+                        <a href="./user/history.html">Lịch sử</a>
+                        <a href="login.html" id="logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="index.html">Trang chủ</a>
+                <a href="borrow.html">Sách đang mượn</a>
+                <a href="category.html">Mượn sách</a>
+                <a id="admin" href="./templatemo_524_product_admin/index.html">Quản lý</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="index.html" class="fas fa-home"></a>
+        <a href="borrow.html" class="fas fa-search"></a>
+        <a href="category.html" class="fas fa-chart-simple"></a>
+        <a href="./templatemo_524_product_admin/index.html" class="fas fa-duotone fa-calendar-days"></a>
+    </nav>
+    <!-- ------- -->
+
+    <!-- Borrowed books -->
+    <section class="borrow-book">
+
+        <div class="book">
+            <div class="book-img">
+                <img src="../static/image/49d8a97a3de0e1beb8f145.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="book-info">
+                    <h3 class="book-name">Contact lenses in Ophthalmic Practice</h3>
+                    <p class="book-author">Mark J.Mannis</p>
+                    <p class="book-category">Vật lý</p>
+                </div>
+                <div class="book-btn">
+                    <button class="btn btn-return">Chi tiết</button>
+                </div>
+                    
+                
+
+            </div>
+        </div>
+
+        <div class="book">
+            <div class="book-img">
+                <img src="../static/image/0133163583af5ff106be7.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="book-info">
+                    <h3 class="book-name">Coronavirus News, Markets and AI</h3>
+                    <p class="book-author">Panka Shanma</p>
+                    <p class="book-category">Chính trị</p>
+                </div>
+                <div class="book-btn">
+                    <button class="btn btn-return">Chi tiết</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ------ -->
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <a href="#"><i class="fas fa-map-maker-alt"></i> 1234, Đại Cồ Việt, Hà Nội</a>
+                <a href="tel:0123456789"><i class="fas fa-phone"></i> 0123456789</a>
+                <a href="mailto:Library@gmail.com"><i class="fas fa-envelope"></i>Library@gmail.com </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="./index.html"><i class="fas fa-arrow-right"></i> Trang chủ</a>
+                <a href="./borrow.html"><i class="fas fa-arrow-right"></i> Sách đang mượn</a>
+                <a href="./category.html"><i class="fas fa-arrow-right"></i> Mượn sách</a>
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://github.com/daitran1412/manage_library" class="fab fa-github"></a>
+            </div>
+
+            <div class="credit">create by <span>Tran Dinh Dai</span></div>
+
+        </div>
+
+    </section>
+    <!-- ------- -->
+
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="../static/image/Loader.gif" alt="Vui lòng đợi...">
+    </div>
+    <!-- ------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+</body>
+
+</html>

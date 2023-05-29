@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../static/css/styles.css">
+    <title>Hồ sơ người dùng</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"><i class="fas fa-book"></i>Library</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="../book/borrow-form.html" class="fas fa-id-card"></a>
+                <a href="../book/favorite-book.html" class="fas fa-heart"></a>
+                <div class="dropdown">
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div class="dropdown-menu">
+                        <a href="./profile.html">Hồ sơ</a>
+                        <a href="./history.html">Lịch sử</a>
+                        <a href="../login.html" id="logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="../index.html">Trang chủ</a>
+                <a href="../borrow.html">Sách đang mượn</a>
+                <a href="../category.html">Mượn Sách</a>
+                <a id="admin" href="../templatemo_524_product_admin/index.html">Quản lý</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="../index.html" class="fas fa-home"></a>
+        <a href="../borrow.html" class="fas fa-search"></a>
+        <a href="../category.html" class="fas fa-chart-simple"></a>
+        <a href="../templatemo_524_product_admin/index.html" class="fas fa-duotone fa-calendar-days"></a>
+    </nav>
+    <!-- ------- -->
+
+    <!-- profile -->
+    <section class="user-profile">
+
+        <div class="profile-container">
+        
+            <div class="title">
+                <h3>Thông tin người dùng</h3>
+            </div>
+            <div class="infor-field">
+                <div class="basic-infor">
+                    <h4>Thông tin cơ bản</h4>
+                    <a href="#" class="fas fa-pencil" id="btn-info"></a>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Mã người dùng</div>
+                    <div class="infor-content">123456789</div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Họ và tên</div>
+                    <div class="infor-content">Trần Đình Đại</div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Ngày sinh</div>
+                    <div class="infor-content">01/01/2001</div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Giới tính</div>
+                    <div class="infor-content">Nam</div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Số điện thoại</div>
+                    <div class="infor-content">0123456789</div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Email</div>
+                    <div class="infor-content">
+                        <a href="mailto:dai@gmail.com"></a>
+                    </div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Địa chỉ</div>
+                    <div class="infor-content">1234, Đại Cồ Việt, Hà Nội</div>
+                </div>
+            </div>
+
+            <div class="infor-field">
+                <div class="basic-infor">
+                    <h4>Thông tin tài khoản</h4>
+                    <a href="#" class="fas fa-pencil" id="btn-acc"></a>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Tên đăng nhập</div>
+                    <div class="infor-content">daitd</div>
+                </div>
+                <div class="infor">
+                    <div class="infor-title">Mật khẩu</div>
+                    <div class="infor-content">********</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- -------- -->
+
+    <!-- form update -->
+
+    <section class="form-update">
+
+        <div class="info-update">
+            <form>
+                <div class="close-form fas fa-times" id="close-info"></div>
+                <div class="title">
+                    <h3>Cập nhật thông tin</h3>
+                </div>
+                <div class="info">
+                    <span>Họ và tên</span>
+                    <input type="text" placeholder="Trần Đình Đại">
+                </div>
+                <div class="info">
+                    <span>Ngày sinh</span>
+                    <input type="date" placeholder="01/01/2001">
+                </div>
+                <div class="info">
+                    <span>Giới tính</span>
+                    <select name="" id="">
+                        <option value="Nam">Nam</option>
+                        <option value="Nữ">Nữ</option>
+                        <option value="Khác">Khác</option>
+                    </select>
+                </div>
+                <div class="info">
+                    <span>Số điện thoại</span>
+                    <input type="tel" placeholder="0123456789">
+                </div>
+                <div class="info">
+                    <span>Email</span>
+                    <input type="email" placeholder="">
+                </div>
+                <div class="info">
+                    <span>Địa chỉ</span>
+                    <textarea type="text" placeholder="1234, Đại Cồ Việt, Hà Nội">
+                    </textarea>
+                </div>
+                <div class="btn btn-info">
+                    <a type="submit">Cập nhật</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="account-update">
+            <form action="">
+                <div class="close-form fas fa-times" id="close-acc"></div>
+                <div class="title">
+                    <h3>Cập nhật tài khoản</h3>
+                </div>
+                <div class="info">
+                    <span>Tên đăng nhập</span>
+                    <input type="text" placeholder="daitd">
+                </div>
+                <div class="info">
+                    <span>Mật khẩu</span>
+                    <input type="password" placeholder="********">
+                </div>
+                <div class="info">
+                    <span>Nhập lại mật khẩu</span>
+                    <input type="password" placeholder="********">
+                </div>
+                <div class="btn btn-acc">
+                    <a type="submit">Cập nhật</a>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- ---------- -->
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <a href="#"><i class="fas fa-map-maker-alt"></i> 1234, Đại Cồ Việt, Hà Nội</a>
+                <a href="tel:0123456789"><i class="fas fa-phone"></i> 0123456789</a>
+                <a href="mailto:Library@gmail.com"><i class="fas fa-envelope"></i>Library@gmail.com </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="../index.html"><i class="fas fa-arrow-right"></i> Trang chủ</a>
+                <a href="../borrow.html"><i class="fas fa-arrow-right"></i> Sách đang mượn</a>
+                <a href="../category.html"><i class="fas fa-arrow-right"></i> Mượn sách</a>
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://github.com/daitran1412/manage_library" class="fab fa-github"></a>
+            </div>
+
+            <div class="credit">create by <span>Tran Dinh Dai</span></div>
+
+        </div>
+
+    </section>
+    <!-- ------- -->
+
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="../../static/image/Loader.gif" alt="Vui lòng đợi...">
+    </div>
+    <!-- ------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../../static/js/scripts.js"></script>
+    <script src="../../static/js/profile.js"></script>
+
+</body>
+
+</html>

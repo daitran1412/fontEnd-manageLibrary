@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Mượn sách</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"><i class="fas fa-book"></i>Library</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="./book/borrow-form.html" class="fas fa-id-card"></a>
+                <a href="./book/favorite-book.html" class="fas fa-heart"></a>
+                <div class="dropdown">
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div class="dropdown-menu">
+                        <a href="./user/profile.html">Hồ sơ</a>
+                        <a href="./user/history.html">Lịch sử</a>
+                        <a href="login.html" id="logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="index.html">Trang chủ</a>
+                <a href="borrow.html">Sách đang mượn</a>
+                <a href="category.html">Mượn sách</a>
+                <a id="admin" href="./templatemo_524_product_admin/index.html">Quản lý</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="index.html" class="fas fa-home"></a>
+        <a href="borrow.html" class="fas fa-search"></a>
+        <a href="category.html" class="fas fa-chart-simple"></a>
+        <a href="./templatemo_524_product_admin/index.html" class="fas fa-duotone fa-calendar-days"></a>
+    </nav>
+    <!-- ------- -->
+
+    <!-- book -->
+    <section class="category">
+
+        <div class="swiper category-content">
+
+            <div class="swiper-wrapper list-type">
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-regular fa-earth-asia"></div>
+                        <div class="type-name" id="all">
+                            <h3>Tất cả</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type" id="vanhoc">
+                    <a href="#">
+                        <div class="type-img fas fa-regular fa-book"></div>
+                        <div class="type-name">
+                            <h3>Văn học</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-solid fa-timeline"></div>
+                        <div class="type-name" id="lichsu">
+                            <h3>Lịch sử</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-solid fa-atom"></div>
+                        <div class="type-name" id="khoahoctn">
+                            <h3>Khoa học tự nhiên</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-solid fa-money-bill"></div>
+                        <div class="type-name" id="kinhte">
+                            <h3>Kinh tế</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-solid fa-robot"></div>
+                        <div class="type-name" id="khoahocvt">
+                            <h3>Khoa học viễn tưởng</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-solid fa-person"></div>
+                        <div class="type-name" id="khoahocxahoi">
+                            <h3>Khoa học xã hội</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-sharp fa-regular fa-user-secret"></div>
+                        <div class="type-name" id="trinhtham">
+                            <h3>Trinh thám</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide type">
+                    <a href="#">
+                        <div class="type-img fas fa-regular fa-book-quran"></div>
+                        <div class="type-name" id="triethoc">
+                            <h3>Triết học và tôn giáo</h3>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="all-book">
+            <div id="book-list"></div>
+        </div>
+
+    </section>
+
+    <!-- ------- -->
+
+
+    <section class="featured" id="featured">
+
+    
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/079d3810ad8a71d4289b24.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/1f37969e0204de5a871574.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/2d58acdd3947e519bc5611.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn"> Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/0133163583af5ff106be7.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/5ecf6242f7d82b8672c922.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/8c5b945d01c7dd9984d68.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/e71df41b6181bddfe4903.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/db175abece24127a4b3568.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="add-favorite fas fa-heart"></a>
+                        <!-- <a href="#" class="fas fa-eye"></a> -->
+                    </div>
+                    <div class="image">
+                        <img src="../static/image/4b80d70c42969ec8c78735.jpg" class="book-img" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Featured books</h3>
+                        <a href="" class="btn">Chi tiết</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <a href="#"><i class="fas fa-map-maker-alt"></i> 1234, Đại Cồ Việt, Hà Nội</a>
+                <a href="tel:0123456789"><i class="fas fa-phone"></i> 0123456789</a>
+                <a href="mailto:Library@gmail.com"><i class="fas fa-envelope"></i>Library@gmail.com </a>
+            </div>        
+
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="./index.html"><i class="fas fa-arrow-right"></i> Trang chủ</a>
+                <a href="./borrow.html"><i class="fas fa-arrow-right"></i> Sách đang mượn</a>
+                <a href="./category.html"><i class="fas fa-arrow-right"></i> Mượn sách</a>
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://github.com/daitran1412/manage_library" class="fab fa-github"></a>
+            </div>
+
+            <div class="credit">create by <span>Tran Dinh Dai</span></div>
+
+        </div>
+
+    </section>
+    <!-- ------- -->
+
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="../static/image/Loader.gif" alt="Vui lòng đợi...">
+    </div>
+    <!-- ------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+</body>
+</html>

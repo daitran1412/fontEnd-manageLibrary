@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"><i class="fas fa-book"></i>Library</a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" id="search-box" placeholder="Search">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <a href="./book/borrow-form.html" class="fas fa-id-card"></a>
+                <a href="./book/favorite-book.html" class="fas fa-heart"></a>
+                <div class="dropdown">
+                    <div id="login-btn" class="fas fa-user"></div>
+                    <div class="dropdown-menu">
+                        <a href="./user/profile.html">Hồ sơ</a>
+                        <a href="./user/history.html">Lịch sử</a>
+                        <a href="login.html" id="logout">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="index.html">Trang chủ</a>
+                <a href="borrow.html">Sách đang mượn</a>
+                <a href="category.html">Chi tiết</a>
+                <a id="admin" href="./templatemo_524_product_admin/index.html" style="">Quản lý</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <nav class="bottom-navbar">
+        <a href="index.html" class="fas fa-home"></a>
+        <a href="borrow.html" class="fas fa-search"></a>
+        <a href="category.html" class="fas fa-chart-simple"></a>
+        <a href="./templatemo_524_product_admin/index.html" class="fas fa-duotone fa-calendar-days"></a>
+    </nav>
+    <!-- ------- -->
+
+    <!-- Content -->
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Hàng ngàn đầu sách</h3>
+                <p>Đằng sau thành công của một con người không thể thiếu một cuốn sách gối đầu.
+                    Sách là kho báu tri thức của cả nhân loại, là kết tinh trí tuệ qua bao thế hệ con người.
+                    Một cuốn sách hay chính là chìa khóa quan trọng để mỗi con người có thể chinh phục mọi khó khăn
+                    và chạm đến thành công trong cuộc sống.</p>
+                <a href="#" class="btn">Tìm hiểu thêm</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="../static/image/00a5400bd49108cf518052.jpg" alt=""
+                            class="book-img"></a>
+                    <a href="#" class="swiper-slide"><img src="../static/image/e6c5a36b37f1ebafb2e054.jpg" alt=""
+                            class="book-img"></a>
+                    <a href="#" class="swiper-slide"><img src="../static/image/e9b61414808e5cd0059f41.jpg" alt=""
+                            class="book-img"></a>
+                    <a href="#" class="swiper-slide"><img src="../static/image/e71df41b6181bddfe4903.jpg" alt=""
+                            class="book-img"></a>
+                    <a href="#" class="swiper-slide"><img src="../static/image/f50cc9a75d3d8163d82c86.jpg" alt=""
+                            class="book-img"></a>
+                    <a href="#" class="swiper-slide"><img src="../static/image/febedf334aa996f7cfb826.jpg" alt=""
+                            class="book-img"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- icon section -->
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Bảo mật</h3>
+                <p>thông tin cá nhân</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Dễ dàng</h3>
+                <p>trả sách tại thư viện</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>Hỗ trợ 24/7</h3>
+                <p>liên lạc bất kì lúc nào</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- ------- -->
+
+    <!-- featured section -->
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>Nổi bật</span></h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper" id="top10">
+
+                
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- ------ -->
+
+    <!-- new book -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"><span>Sách mới</span></h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper" id="new-book">
+
+                
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+    <!-- -------- -->
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <a href="#"><i class="fas fa-map-maker-alt"></i> 1234, Đại Cồ Việt, Hà Nội</a>
+                <a href="tel:0123456789"><i class="fas fa-phone"></i> 0123456789</a>
+                <a href="mailto:Library@gmail.com"><i class="fas fa-envelope"></i>Library@gmail.com </a>
+            </div>        
+
+            <div class="box">
+                <h3>Quick link</h3>
+                <a href="./index.html"><i class="fas fa-arrow-right"></i> Trang chủ</a>
+                <a href="./borrow.html"><i class="fas fa-arrow-right"></i> Sách đang mượn</a>
+                <a href="./category.html"><i class="fas fa-arrow-right"></i> Chi tiết</a>
+            </div>
+
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="https://github.com/daitran1412/manage_library" class="fab fa-github"></a>
+            </div>
+
+            <div class="credit">create by <span>Tran Dinh Dai</span></div>
+
+        </div>
+
+    </section>
+    <!-- ------- -->
+
+    <!-- loader -->
+    <div class="loader-container">
+        <img src="../static/image/Loader.gif" alt="Vui lòng đợi...">
+    </div>
+    <!-- ------- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../static/js/scripts.js"></script>
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>
